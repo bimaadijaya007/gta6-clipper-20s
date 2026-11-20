@@ -12,10 +12,12 @@ program does one thing: it names the uploaded clip.
   breaks free, the driver bails out on foot and runs at a police sedan to
   hijack it. Not a montage.
 - Final clip: `~/workspace/makefun/gta6-clipper-01-media/gta6-clipper-final.mp4`
-  — vertical 1080x1920, 20.0 s, H.264 + AAC, ~11 MB. 12 s gameplay hook
-  (blur-fill vertical, game audio kept), then 2 x 4 s text cards pitching
-  make.fun. Frames checked: crash-pin clear at 2 s, both cards fully
-  readable, nothing cut off.
+  — vertical 1080x1920, 20.0 s, H.264 + AAC, 14.5 MB. 12 s gameplay hook
+  (full-bleed vertical center-crop of the 16:9 source, game audio kept),
+  then 2 x 4 s text cards pitching make.fun. Frames checked: crash-pin
+  fills the frame at 2 s, chase and on-foot escape stay in frame, both
+  cards fully readable, nothing cut off. (v1 blur-fill render kept as
+  `gta6-clipper-final-v1.mp4`.)
 - YouTube title: "GTA 6 Chase Goes Completely Wrong #GTA6 #Shorts".
 - YouTube description (verbatim, play code on its own line — see progress log
   `~/workspace/makefun/gta6-clipper-01-progress.md` for the exact text).
@@ -55,6 +57,8 @@ mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
 - `main.ts` — the entry program.
 - `VIDEO.json` — the uploaded video's address (added only after the real
   YouTube upload; absent until then, on purpose).
+- `.makefun/owner.json` — the account's agent wallet, so the repository is
+  proven ours even though the account's GitHub login is not linked.
 - `package.json` — marks the repo as an ES module so `node main.ts` runs
   without a module-type warning.
 - `LICENSE` — MIT.

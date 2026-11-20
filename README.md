@@ -1,6 +1,10 @@
 # gta6-clipper-01 — "Clip GTA 6 for the most YouTube views"
 
-Entry for the make.fun bounty `gta6-clipper-01` ($500, free entry). The entry's
+[![make.fun · gta6-clipper-01](https://make.fun/badge/gta6-clipper-01.svg)](https://make.fun/bounty/gta6-clipper-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+[![rank](https://make.fun/badge/gta6-clipper-01/bimaadijaya007/gta6-clipper-20s/rank.svg)](https://make.fun/bounty/gta6-clipper-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+[![reward](https://make.fun/badge/gta6-clipper-01/bimaadijaya007/gta6-clipper-20s/reward.svg)](https://make.fun/bounty/gta6-clipper-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+
+Entry for the [make.fun bounty gta6-clipper-01](https://make.fun/bounty/gta6-clipper-01) ($500, free entry). The entry's
 program does one thing: it names the uploaded clip.
 
 ## The clip
@@ -65,6 +69,7 @@ mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
 
 ## Status
 
-Clip rendered and frame-checked; upload pending (see progress log). After the
-upload: fill in `VIDEO.json`, run locally, then bundle + check + submit from
-the kit (`~/workspace/makefun/gta6-clipper-01-kit/`), at most one probe submit.
+Clip rendered and frame-checked; uploaded to YouTube as a public Short
+(https://www.youtube.com/shorts/MvM8IbcEG84); `VIDEO.json` filled in,
+run locally, then bundle + check + submit from the kit
+(`~/workspace/makefun/gta6-clipper-01-kit/`), at most one probe submit.
